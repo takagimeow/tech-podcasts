@@ -8,7 +8,11 @@ const customJestConfig = {
   collectCoverage: false,
   coverageDirectory: "coverage",
   moduleDirectories: ["node_modules", "<rootDir>/"],
-  moduleNameMapper: { "^@/(.*)$": "<rootDir>/app/$1" },
+  moduleNameMapper: { 
+    "^@/(.*)$": "<rootDir>/app/$1",
+    "^@tests/(.*)$": "<rootDir>/tests/$1",
+    "^@stories/(.*)$": "<rootDir>/stories/$1",
+  },
   testMatch: ["**/?(*.)+(spec|test).[jt]s?(x)"],
   testPathIgnorePatterns: ["<rootDir>/e2e/"],
   testEnvironment: "jest-environment-jsdom",

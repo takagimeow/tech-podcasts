@@ -18,5 +18,19 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "jest": {
+    "clearMocks": true,
+    "collectCoverage": false,
+    "coverageDirectory": "coverage",
+    "moduleFileExtensions": ["js", "jsx", "ts", "tsx"],
+    "testEnvironment": "jest-environment-jsdom",
+    "transform": { "^.+\\.(ts|tsx|css)$": ["esbuild-jest", { "sourcemap": true }] },
+    "setupFilesAfterEnv": ["jest-setup/react-jest.setup.ts"],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/apps/web/app/$1",
+      "^@tests/(.*)$": "<rootDir>/apps/web/tests/$1",
+      "^@stories/(.*)$": "<rootDir>/apps/web/stories/$1"
+    }
+  }
 }

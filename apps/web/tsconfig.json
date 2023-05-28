@@ -5,7 +5,9 @@
     "plugins": [{ "name": "next" }],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["app/*"]
+      "@/*": ["app/*"],
+      "@tests/*": ["tests/*"],
+      "@stories/*": ["stories/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "jest.config.ts"],
