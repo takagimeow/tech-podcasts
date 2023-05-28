@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "test": "jest"
   },
   "dependencies": {
     "next": "^13.4.1",
@@ -24,11 +25,20 @@
     "@storybook/nextjs": "^7.0.18",
     "@storybook/react": "^7.0.18",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "@storybook/testing-react": "^2.0.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@types/jest": "^29.5.1",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
     "eslint-config-custom": "*",
+    "eslint-plugin-jest-dom": "^4.0.3",
     "eslint-plugin-storybook": "^0.6.12",
+    "eslint-plugin-testing-library": "^5.11.0",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "jest-html-reporters": "^3.1.4",
+    "jest-setup": "*",
     "storybook": "^7.0.18",
     "tsconfig": "*",
     "typescript": "^4.5.3"
