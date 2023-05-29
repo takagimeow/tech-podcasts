@@ -37,7 +37,7 @@ async function jestConfig() {
       "\\.(gif|ttf|eot|svg)$": "<rootDir>/jest.fileMock.js",
       ...nextJestConfig.moduleNameMapper
     },
-    setupFilesAfterEnv: ["jest-setup/react-jest.setup.ts"],
+    setupFilesAfterEnv: ["jest-setup/next-jest.setup.ts"],
   }
 }
 

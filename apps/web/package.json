@@ -39,6 +39,7 @@
     "jest-environment-jsdom": "^29.5.0",
     "jest-html-reporters": "^3.1.4",
     "jest-setup": "*",
+    "next-router-mock": "^0.9.3",
     "storybook": "^7.0.18",
     "tsconfig": "*",
     "typescript": "^4.5.3"
