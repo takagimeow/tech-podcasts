@@ -26,7 +26,7 @@
     "moduleFileExtensions": ["js", "jsx", "ts", "tsx"],
     "testEnvironment": "jest-environment-jsdom",
     "transform": { "^.+\\.(ts|tsx|css)$": ["esbuild-jest", { "sourcemap": true }] },
-    "setupFilesAfterEnv": ["jest-setup/react-jest.setup.ts"],
+    "setupFilesAfterEnv": ["jest-setup/next-jest.setup.ts"],
     "moduleNameMapper": {
       "^@/(.*)$": "<rootDir>/apps/web/app/$1",
       "^@tests/(.*)$": "<rootDir>/apps/web/tests/$1",
