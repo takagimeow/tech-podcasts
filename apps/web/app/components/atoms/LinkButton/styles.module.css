@@ -1,0 +1,30 @@
+.module {
+  color: #b3b3b3;
+  border-bottom: 0;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.module:hover {
+  color: #fff;
+}
+
+.module[data-variant="small"] {
+  font-size: 10px;
+}
+
+.module[data-variant="medium"] {
+  font-size: 12px;
+}
+
+.module[data-variant="large"] {
+  font-size: 16px;
+}
+
+.module[data-variant="normal"] {
+  font-weight: normal;
+}
+
+.module[data-weight="bold"] {
+  font-weight: bold;
+}
