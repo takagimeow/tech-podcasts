@@ -1,0 +1,16 @@
+html {
+  font-size: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 100%;
+}
+
+.sub-container {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+}
