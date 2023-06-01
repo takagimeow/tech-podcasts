@@ -7,6 +7,7 @@ type Props = {
   disabled?: boolean;
   variant?: "small" | "medium" | "large";
   weight?: "normal" | "bold";
+  theme?: "light" | "dark";
 } & React.ComponentPropsWithoutRef<typeof Link>;
 
 const LinkButton = forwardRef<HTMLAnchorElement, Props>(function LinkButtonBase({
@@ -15,6 +16,7 @@ const LinkButton = forwardRef<HTMLAnchorElement, Props>(function LinkButtonBase(
   disabled,
   variant = "medium",
   weight = "bold",
+  theme = "dark",
   ...rest
 }, ref) {
   return (
@@ -25,6 +27,7 @@ const LinkButton = forwardRef<HTMLAnchorElement, Props>(function LinkButtonBase(
         aria-disabled={disabled ? "true" : "false"}
         data-variant={variant}
         data-weight={weight}
+        data-theme={theme}
       >
         {
           typeof children === "string" ? (
